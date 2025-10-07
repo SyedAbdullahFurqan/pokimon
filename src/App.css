@@ -1,0 +1,55 @@
+.card{
+
+margin-top: 20px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+justify-content: center;
+gap: 30px;
+
+}
+.data{
+border: 2px solid rgb(168, 168, 185);
+border-radius: 20px;
+padding: 0px 20px;
+background-color: rgb(45, 196, 196);
+cursor: pointer;
+}
+
+.data:hover .img1{
+
+    transform:translateY(-20px)
+}
+.data > button{
+    color: rgb(8, 8, 9);
+    background-color: rgb(18, 255, 85);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 20px;
+    font-style: oblique;
+}
+.poki{
+   display: grid
+   ;
+margin-top: 20px;
+
+   grid-template-columns: repeat(2,1fr);
+}.weight{
+   
+}
+.data p{
+font-weight: 800;
+    font-size: 20px;
+}
+ .img1 { 
+    padding-top: 20px;
+height: 150px;
+}
+
+
+.poki{
+    color: white;
+    width: 140px;
+    text-align: center;
+    margin: 21px auto;
+}
