@@ -49,7 +49,7 @@ const  pook =(e)=>{
   
   [e.target.name]:e.target.value 
 })
-
+setTest(false)
 
   
 }
@@ -70,14 +70,15 @@ const search = count.filter(sea =>
   <input type="text"  name='name' onChange={pook} placeholder='poki' />
 
 <div className='card bg-amber-600'>
-{search.map((data)=>{
-
-  return(
-<Poki    key={data.id} data={data}    />
-  )
-})}
-
-
+{search.length > 0 ? (
+  search.map((data) => (
+    <Poki key={data.id} data={data} />
+  ))
+) : (
+  count.map((data) => (
+    <Poki key={data.id} data={data} />
+  ))
+)}  
 {/*
 
 data image
